@@ -1,0 +1,20 @@
+
+
+app-header{
+    //background-color: blue;
+    height: 70px;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    app-header{
+        height: 20%;
+    }
+}
+
+.page-wrapper {
+    // display: flex;
+    // flex-direction: column;
+    min-height: 100vh;     /* For full-height when needed */
+    height: 10vh;          /* Shrinks if content is short */
+  }

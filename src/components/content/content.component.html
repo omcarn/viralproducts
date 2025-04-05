@@ -1,0 +1,23 @@
+        <div class="main-container">
+            
+            @for( item of items; track item.id){
+
+                <span class="items">
+                    <a href="{{item.link}}" target="_blank" style="text-decoration: none;">
+                    <div class="img-container">
+                        <img src="../../assets/img/products-imgs/product{{item.id}}.jpg" style="object-fit: contain; height: 100px;" alt="Product Image" class="img-responsive">
+    
+                    </div>
+                     <div class="item-title"><br>
+                         {{item.title}}
+                         
+                         <a href="{{item.link}}" target="_blank">
+                            <button type="button" class="btn btn-warning">Check it out</button>
+                            <!-- <button> </button> -->
+                        </a>
+                     </div>
+                    </a>
+                </span>
+            }
+
+        </div>
